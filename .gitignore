@@ -1,0 +1,40 @@
+# 综合 / 布局布线产物（含 PnR 数据库 *.pr 与位流 *.fs，动辄上百 MB）
+impl/
+
+# IP Core Generator 中间目录（project.ini / *.prj / *_syn*.html / *.log，
+# 由同级 .ipc 参数文件随时可重新生成）
+src/*/temp/
+
+# 本地工程配置（窗口状态、最近器件、用户路径，因人而异）
+*.gprj.user
+
+# 位流与烧录产物
+*.fs
+*.bin
+*.binx
+*.pr
+*.p
+
+# 综合 / 仿真日志与报告
+*.log
+*.rpt
+
+# 参考资料类二进制文档（数据手册、原理图等，体积大且基本不变）
+# 用字符类覆盖 .pdf/.PDF/.Pdf 等全部大小写变体
+*.[pP][dD][fF]
+
+# 误存的重复源码副本（工程文件只引用 .v，此文件不在 gprj 清单内）
+*.v.v
+
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# ★ 临时：README.md 待作者审阅确认后再发布（确认后删除本行即可入库）
+README.md

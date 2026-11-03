@@ -1,0 +1,12 @@
+[General]
+ipc_version=4
+file=line_buffer_ram
+module=line_buffer_ram
+target_device=gw5at60b-002
+type=ssram_ram16sdp
+version=1.0
+
+[Config]
+DEPTH=1024
+LANG=0
+WIDTH=16
